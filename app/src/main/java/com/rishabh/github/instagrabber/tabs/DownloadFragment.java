@@ -12,7 +12,6 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.media.ThumbnailUtils;
 import android.net.Uri;
@@ -22,12 +21,12 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import android.support.v4.os.ResultReceiver;
-import android.support.v7.widget.CardView;
+import androidx.cardview.widget.CardView;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -65,8 +64,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import static android.content.Context.CLIPBOARD_SERVICE;
-import static com.rishabh.github.instagrabber.R.id.cv_downloadView;
-import static com.rishabh.github.instagrabber.R.id.edittxturl;
 import static com.rishabh.github.instagrabber.service.FileDownloaderService.RESPONSE_DOWNLOAD_PROGRESS;
 
 public class DownloadFragment extends Fragment {

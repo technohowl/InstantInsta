@@ -5,11 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Binder;
-import android.os.DeadObjectException;
 import android.os.Environment;
 import android.os.IBinder;
-import android.provider.SyncStateContract;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 import com.rishabh.github.instagrabber.database.DBController;
